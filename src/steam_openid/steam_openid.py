@@ -9,7 +9,7 @@ class SteamOpenID:
 
     def __init__(self, realm: str, return_to: str):
         """
-        Initializes SteamAuth with realm and return_to URLs.
+        Initializes SteamOpenID with realm and return_to URLs.
 
         :param realm: The URL of the realm that is requesting authentication.
         :type realm: str
