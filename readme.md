@@ -15,7 +15,9 @@ pip install -r requirements.txt
 
 ## Example usage
 ```python
-steam_openid = SteamOpenID(
+from steam_openid import SteamOpenID
+
+steam = SteamOpenID(
     realm="http://localhost:8080/steam/login",
     return_to="http://localhost:8080/steam/callback"
 )
@@ -23,13 +25,13 @@ steam_openid = SteamOpenID(
 
 @app.route("/steam/login")
 def login():
-    redirect_url = steam_openid.get_redirect_url()
+    redirect_url = steam.get_redirect_url()
     return redirect(redirect_url)
 
 
 @app.route("/steam/callback")
 def callback(request):
-    steam_id = steam_openid.validate_results(request.query_params)
+    steam_id = steam.validate_results(request.query_params)
     if steam_id:
         return 200, f"Your steam id is: {steam_id}"
     else:
