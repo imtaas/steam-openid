@@ -6,7 +6,6 @@ class SteamOpenID:
     """
     Main library class that handle Steam OpenID authentication.
     """
-
     def __init__(self, realm: str, return_to: str):
         """
         Initializes SteamOpenID with realm and return_to URLs.
@@ -25,7 +24,6 @@ class SteamOpenID:
         """
         Custom exception for errors while extracting the Steam ID from the OpenID response.
         """
-
         def __init__(self, message="There was an error extracting the Steam ID from the identity url provided"):
             self.message = message
             super().__init__(self.message)
