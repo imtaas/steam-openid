@@ -1,7 +1,18 @@
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
+[project]
+name = "steam-openid"
+version = "1.0.0"
+authors = [
+  { name="imtaas" }
 ]
-build-backend = "setuptools.build_meta"
+description = "A Python wrapper for handling Steam OpenID authentication."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
+[project.urls]
+Homepage = "https://github.com/imtaas/steam-openid"
+Issues = "https://github.com/imtaas/steam-openid/issues"
