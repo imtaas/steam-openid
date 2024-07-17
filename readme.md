@@ -1,6 +1,6 @@
 # steam-openid
 
-steam-openid is a Python wrapper for handling Steam OpenID authentication using the `python3-openid` library.
+steam-openid provides a straightforward implementation for integrating Steam OpenID authentication into applications.
 
 ## Requirements
 
