@@ -7,12 +7,6 @@ steam-openid provides a straightforward implementation for integrating Steam Ope
 - Python 3.6 or higher
 - python3-openid
 
-You can install the required dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Example usage
 ```python
 from steam_openid import SteamOpenID
